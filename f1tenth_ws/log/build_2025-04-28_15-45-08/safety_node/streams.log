@@ -1,0 +1,97 @@
+[0.096s] Invoking command in '/home/yundo/f1tenth_ws/build/safety_node': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/teleop_tools:/home/yundo/f1tenth_ws/install/teleop_tools_msgs:/home/yundo/f1tenth_ws/install/ackermann_mux:/home/yundo/vesc_ws/install/vesc:/home/yundo/vesc_ws/install/vesc_driver:/home/yundo/vesc_ws/install/vesc_ackermann:/home/yundo/f1tenth_ws/install/f1tenth_stack:/home/yundo/f1tenth_ws/install/joy_teleop:/home/yundo/f1tenth_ws/install/mouse_teleop:/home/yundo/f1tenth_ws/install/key_teleop:/opt/ros/foxy:/home/yundo/vesc_ws/install/vesc_msgs:/home/yundo/vesc_ws/install/udp_driver:/home/yundo/vesc_ws/install/io_context:/home/yundo/vesc_ws/install/asio_cmake_module:/home/yundo/ydlidar_ws/install/ydlidar_ros2_driver /usr/bin/cmake /home/yundo/f1tenth_ws/src/f1tenth_system/safety_node -DCMAKE_INSTALL_PREFIX=/home/yundo/f1tenth_ws/install/safety_node
+[2.773s] -- The C compiler identification is GNU 8.4.0
+[5.172s] -- The CXX compiler identification is GNU 8.4.0
+[5.217s] -- Check for working C compiler: /usr/bin/cc
+[5.527s] -- Check for working C compiler: /usr/bin/cc -- works
+[5.542s] -- Detecting C compiler ABI info
+[5.878s] -- Detecting C compiler ABI info - done
+[5.932s] -- Detecting C compile features
+[5.937s] -- Detecting C compile features - done
+[5.955s] -- Check for working CXX compiler: /usr/bin/c++
+[6.305s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[6.310s] -- Detecting CXX compiler ABI info
+[6.767s] -- Detecting CXX compiler ABI info - done
+[6.850s] -- Detecting CXX compile features
+[6.854s] -- Detecting CXX compile features - done
+[6.891s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[7.063s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[7.064s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[8.470s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[8.811s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.871s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[9.544s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[9.678s] -- Found FastRTPS: /opt/ros/foxy/include  
+[10.132s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.491s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[10.504s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.511s] -- Looking for pthread.h
+[10.812s] -- Looking for pthread.h - found
+[10.813s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[11.107s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[11.108s] -- Looking for pthread_create in pthreads
+[11.339s] -- Looking for pthread_create in pthreads - not found
+[11.340s] -- Looking for pthread_create in pthread
+[11.611s] -- Looking for pthread_create in pthread - found
+[11.615s] -- Found Threads: TRUE  
+[12.508s] -- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+[12.547s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[13.133s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[13.306s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[13.780s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[14.195s] -- Added test 'copyright' to check source files copyright and LICENSE
+[14.202s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[14.202s] -- Configured cppcheck include dirs: /home/yundo/f1tenth_ws/src/f1tenth_system/safety_node/include
+[14.203s] -- Configured cppcheck exclude dirs and/or files: 
+[14.208s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[14.208s] -- Configured cpplint exclude dirs and/or files: 
+[14.211s] -- Added test 'flake8' to check Python code syntax and style conventions
+[14.214s] -- Added test 'lint_cmake' to check CMake code style
+[14.217s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[14.223s] -- Added test 'uncrustify' to check C / C++ code style
+[14.223s] -- Configured uncrustify additional arguments: 
+[14.226s] -- Added test 'xmllint' to check XML markup files
+[14.242s] -- Configuring done
+[14.282s] -- Generating done
+[14.301s] -- Build files have been written to: /home/yundo/f1tenth_ws/build/safety_node
+[14.335s] Invoked command in '/home/yundo/f1tenth_ws/build/safety_node' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/teleop_tools:/home/yundo/f1tenth_ws/install/teleop_tools_msgs:/home/yundo/f1tenth_ws/install/ackermann_mux:/home/yundo/vesc_ws/install/vesc:/home/yundo/vesc_ws/install/vesc_driver:/home/yundo/vesc_ws/install/vesc_ackermann:/home/yundo/f1tenth_ws/install/f1tenth_stack:/home/yundo/f1tenth_ws/install/joy_teleop:/home/yundo/f1tenth_ws/install/mouse_teleop:/home/yundo/f1tenth_ws/install/key_teleop:/opt/ros/foxy:/home/yundo/vesc_ws/install/vesc_msgs:/home/yundo/vesc_ws/install/udp_driver:/home/yundo/vesc_ws/install/io_context:/home/yundo/vesc_ws/install/asio_cmake_module:/home/yundo/ydlidar_ws/install/ydlidar_ros2_driver /usr/bin/cmake /home/yundo/f1tenth_ws/src/f1tenth_system/safety_node -DCMAKE_INSTALL_PREFIX=/home/yundo/f1tenth_ws/install/safety_node
+[14.344s] Invoking command in '/home/yundo/f1tenth_ws/build/safety_node': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/teleop_tools:/home/yundo/f1tenth_ws/install/teleop_tools_msgs:/home/yundo/f1tenth_ws/install/ackermann_mux:/home/yundo/vesc_ws/install/vesc:/home/yundo/vesc_ws/install/vesc_driver:/home/yundo/vesc_ws/install/vesc_ackermann:/home/yundo/f1tenth_ws/install/f1tenth_stack:/home/yundo/f1tenth_ws/install/joy_teleop:/home/yundo/f1tenth_ws/install/mouse_teleop:/home/yundo/f1tenth_ws/install/key_teleop:/opt/ros/foxy:/home/yundo/vesc_ws/install/vesc_msgs:/home/yundo/vesc_ws/install/udp_driver:/home/yundo/vesc_ws/install/io_context:/home/yundo/vesc_ws/install/asio_cmake_module:/home/yundo/ydlidar_ws/install/ydlidar_ros2_driver /usr/bin/cmake --build /home/yundo/f1tenth_ws/build/safety_node -- -j4 -l4
+[14.506s] [35m[1mScanning dependencies of target safety_node[0m
+[15.032s] [ 50%] [32mBuilding CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o[0m
+[19.887s] [01m[K/home/yundo/f1tenth_ws/src/f1tenth_system/safety_node/src/safety_node.cpp:[m[K In member function ‘[01m[Kvoid Safety::drive_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[19.888s] [01m[K/home/yundo/f1tenth_ws/src/f1tenth_system/safety_node/src/safety_node.cpp:33:71:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[19.889s]      void drive_callback([01;35m[Kconst nav_msgs::msg::Odometry::ConstSharedPtr msg[m[K)
+[19.889s]                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[19.897s] [01m[K/home/yundo/f1tenth_ws/src/f1tenth_system/safety_node/src/safety_node.cpp:[m[K In member function ‘[01m[Kvoid Safety::scan_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[19.897s] [01m[K/home/yundo/f1tenth_ws/src/f1tenth_system/safety_node/src/safety_node.cpp:38:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kscan_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[19.897s]      void scan_callback([01;35m[Kconst sensor_msgs::msg::LaserScan::ConstSharedPtr scan_msg[m[K)
+[19.898s]                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[21.440s] [100%] [32m[1mLinking CXX executable safety_node[0m
+[22.625s] [100%] Built target safety_node
+[22.669s] Invoked command in '/home/yundo/f1tenth_ws/build/safety_node' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/teleop_tools:/home/yundo/f1tenth_ws/install/teleop_tools_msgs:/home/yundo/f1tenth_ws/install/ackermann_mux:/home/yundo/vesc_ws/install/vesc:/home/yundo/vesc_ws/install/vesc_driver:/home/yundo/vesc_ws/install/vesc_ackermann:/home/yundo/f1tenth_ws/install/f1tenth_stack:/home/yundo/f1tenth_ws/install/joy_teleop:/home/yundo/f1tenth_ws/install/mouse_teleop:/home/yundo/f1tenth_ws/install/key_teleop:/opt/ros/foxy:/home/yundo/vesc_ws/install/vesc_msgs:/home/yundo/vesc_ws/install/udp_driver:/home/yundo/vesc_ws/install/io_context:/home/yundo/vesc_ws/install/asio_cmake_module:/home/yundo/ydlidar_ws/install/ydlidar_ros2_driver /usr/bin/cmake --build /home/yundo/f1tenth_ws/build/safety_node -- -j4 -l4
+[22.680s] Invoking command in '/home/yundo/f1tenth_ws/build/safety_node': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/teleop_tools:/home/yundo/f1tenth_ws/install/teleop_tools_msgs:/home/yundo/f1tenth_ws/install/ackermann_mux:/home/yundo/vesc_ws/install/vesc:/home/yundo/vesc_ws/install/vesc_driver:/home/yundo/vesc_ws/install/vesc_ackermann:/home/yundo/f1tenth_ws/install/f1tenth_stack:/home/yundo/f1tenth_ws/install/joy_teleop:/home/yundo/f1tenth_ws/install/mouse_teleop:/home/yundo/f1tenth_ws/install/key_teleop:/opt/ros/foxy:/home/yundo/vesc_ws/install/vesc_msgs:/home/yundo/vesc_ws/install/udp_driver:/home/yundo/vesc_ws/install/io_context:/home/yundo/vesc_ws/install/asio_cmake_module:/home/yundo/ydlidar_ws/install/ydlidar_ros2_driver /usr/bin/cmake --install /home/yundo/f1tenth_ws/build/safety_node
+[22.712s] -- Install configuration: ""
+[22.714s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/lib/safety_node/safety_node
+[22.715s] -- Set runtime path of "/home/yundo/f1tenth_ws/install/safety_node/lib/safety_node/safety_node" to ""
+[22.716s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/environment/pythonpath.sh
+[22.717s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/environment/pythonpath.dsv
+[22.717s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/lib/python3.8/site-packages/safety_node
+[22.718s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/lib/python3.8/site-packages/safety_node/__init__.py
+[22.880s] Listing '/home/yundo/f1tenth_ws/install/safety_node/lib/python3.8/site-packages/safety_node'...
+[22.880s] Compiling '/home/yundo/f1tenth_ws/install/safety_node/lib/python3.8/site-packages/safety_node/__init__.py'...
+[22.901s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/lib/safety_node/safety_node.py
+[22.902s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/ament_index/resource_index/package_run_dependencies/safety_node
+[22.903s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/ament_index/resource_index/parent_prefix_path/safety_node
+[22.903s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/environment/ament_prefix_path.sh
+[22.904s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/environment/ament_prefix_path.dsv
+[22.905s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/environment/path.sh
+[22.906s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/environment/path.dsv
+[22.907s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/local_setup.bash
+[22.907s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/local_setup.sh
+[22.907s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/local_setup.zsh
+[22.908s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/local_setup.dsv
+[22.908s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/package.dsv
+[22.909s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/ament_index/resource_index/packages/safety_node
+[22.910s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/cmake/safety_nodeConfig.cmake
+[22.910s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/cmake/safety_nodeConfig-version.cmake
+[22.911s] -- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/package.xml
+[22.920s] Invoked command in '/home/yundo/f1tenth_ws/build/safety_node' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/teleop_tools:/home/yundo/f1tenth_ws/install/teleop_tools_msgs:/home/yundo/f1tenth_ws/install/ackermann_mux:/home/yundo/vesc_ws/install/vesc:/home/yundo/vesc_ws/install/vesc_driver:/home/yundo/vesc_ws/install/vesc_ackermann:/home/yundo/f1tenth_ws/install/f1tenth_stack:/home/yundo/f1tenth_ws/install/joy_teleop:/home/yundo/f1tenth_ws/install/mouse_teleop:/home/yundo/f1tenth_ws/install/key_teleop:/opt/ros/foxy:/home/yundo/vesc_ws/install/vesc_msgs:/home/yundo/vesc_ws/install/udp_driver:/home/yundo/vesc_ws/install/io_context:/home/yundo/vesc_ws/install/asio_cmake_module:/home/yundo/ydlidar_ws/install/ydlidar_ros2_driver /usr/bin/cmake --install /home/yundo/f1tenth_ws/build/safety_node

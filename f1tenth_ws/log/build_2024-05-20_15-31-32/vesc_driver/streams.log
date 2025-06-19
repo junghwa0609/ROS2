@@ -1,0 +1,47 @@
+[0.094s] Invoking command in '/home/yundo/f1tenth_ws/build/vesc_driver': AMENT_PREFIX_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yundo/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/yundo/f1tenth_ws/build/vesc_driver -- -j4 -l4
+[0.533s] [ 14%] [32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o[0m
+[0.599s] [ 42%] Built target vesc_driver_node
+[0.604s] [ 57%] [32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_packet_factory.cpp.o[0m
+[7.777s] [ 71%] [32m[1mLinking CXX shared library libvesc_driver.so[0m
+[9.225s] [100%] Built target vesc_driver
+[9.269s] Invoked command in '/home/yundo/f1tenth_ws/build/vesc_driver' returned '0': AMENT_PREFIX_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yundo/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/yundo/f1tenth_ws/build/vesc_driver -- -j4 -l4
+[9.461s] Invoking command in '/home/yundo/f1tenth_ws/build/vesc_driver': AMENT_PREFIX_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yundo/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/yundo/f1tenth_ws/build/vesc_driver
+[9.514s] -- Install configuration: ""
+[9.515s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/lib/vesc_driver/vesc_driver_node
+[9.518s] -- Set runtime path of "/home/yundo/f1tenth_ws/install/vesc_driver/lib/vesc_driver/vesc_driver_node" to ""
+[9.519s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/include
+[9.521s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/include/vesc_driver
+[9.522s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/include/vesc_driver/crc.hpp
+[9.523s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/include/vesc_driver/vesc_packet.hpp
+[9.524s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/include/vesc_driver/vesc_interface.hpp
+[9.526s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/include/vesc_driver/datatypes.hpp
+[9.533s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/include/vesc_driver/vesc_driver.hpp
+[9.534s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/include/vesc_driver/vesc_packet_factory.hpp
+[9.535s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/environment/library_path.sh
+[9.536s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/environment/library_path.dsv
+[9.537s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/lib/libvesc_driver.so
+[9.549s] -- Set runtime path of "/home/yundo/f1tenth_ws/install/vesc_driver/lib/libvesc_driver.so" to ""
+[9.549s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/launch
+[9.551s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/launch/vesc_driver_node.launch.py
+[9.552s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/params
+[9.552s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/params/vesc_config.yaml
+[9.554s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/ament_index/resource_index/package_run_dependencies/vesc_driver
+[9.555s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/ament_index/resource_index/parent_prefix_path/vesc_driver
+[9.556s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/environment/ament_prefix_path.sh
+[9.557s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/environment/ament_prefix_path.dsv
+[9.557s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/environment/path.sh
+[9.558s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/environment/path.dsv
+[9.559s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/local_setup.bash
+[9.560s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/local_setup.sh
+[9.561s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/local_setup.zsh
+[9.562s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/local_setup.dsv
+[9.563s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/package.dsv
+[9.585s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/ament_index/resource_index/packages/vesc_driver
+[9.586s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/ament_index/resource_index/rclcpp_components/vesc_driver
+[9.587s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.587s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.589s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[9.590s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/cmake/vesc_driverConfig.cmake
+[9.590s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/cmake/vesc_driverConfig-version.cmake
+[9.591s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_driver/share/vesc_driver/package.xml
+[9.593s] Invoked command in '/home/yundo/f1tenth_ws/build/vesc_driver' returned '0': AMENT_PREFIX_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yundo/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/yundo/f1tenth_ws/build/vesc_driver

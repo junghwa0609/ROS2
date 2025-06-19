@@ -1,0 +1,31 @@
+[0.124s] Invoking command in '/home/yundo/f1tenth_ws/build/ackermann_mux': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/yundo/f1tenth_ws/src/f1tenth_system/ackermann_mux -DCMAKE_INSTALL_PREFIX=/home/yundo/f1tenth_ws/install/ackermann_mux
+[0.205s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.314s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.802s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.139s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.170s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[3.116s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.477s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.483s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.492s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[5.113s] CMake Error at CMakeLists.txt:17 (find_package):
+[5.113s]   By not providing "Finddiagnostic_updater.cmake" in CMAKE_MODULE_PATH this
+[5.114s]   project has asked CMake to find a package configuration file provided by
+[5.114s]   "diagnostic_updater", but CMake did not find one.
+[5.115s] 
+[5.115s]   Could not find a package configuration file provided by
+[5.116s]   "diagnostic_updater" with any of the following names:
+[5.116s] 
+[5.117s]     diagnostic_updaterConfig.cmake
+[5.117s]     diagnostic_updater-config.cmake
+[5.118s] 
+[5.118s]   Add the installation prefix of "diagnostic_updater" to CMAKE_PREFIX_PATH or
+[5.119s]   set "diagnostic_updater_DIR" to a directory containing one of the above
+[5.119s]   files.  If "diagnostic_updater" provides a separate development package or
+[5.120s]   SDK, be sure it has been installed.
+[5.120s] 
+[5.121s] 
+[5.138s] -- Configuring incomplete, errors occurred!
+[5.139s] See also "/home/yundo/f1tenth_ws/build/ackermann_mux/CMakeFiles/CMakeOutput.log".
+[5.139s] See also "/home/yundo/f1tenth_ws/build/ackermann_mux/CMakeFiles/CMakeError.log".
+[5.211s] Invoked command in '/home/yundo/f1tenth_ws/build/ackermann_mux' returned '1': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/yundo/f1tenth_ws/src/f1tenth_system/ackermann_mux -DCMAKE_INSTALL_PREFIX=/home/yundo/f1tenth_ws/install/ackermann_mux

@@ -1,0 +1,24 @@
+[3.976s] Invoking command in '/home/yundo/f1tenth_ws/src/f1tenth_system/teleop_tools/key_teleop': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/home/yundo/f1tenth_ws/build/key_teleop/prefix_override:/home/yundo/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/key_teleop build --build-base /home/yundo/f1tenth_ws/build/key_teleop/build install --record /home/yundo/f1tenth_ws/build/key_teleop/install.log --install-scripts $base/lib/key_teleop --single-version-externally-managed install_data
+[5.116s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[5.117s]   warnings.warn(
+[5.267s] running egg_info
+[5.270s] writing ../../../../build/key_teleop/key_teleop.egg-info/PKG-INFO
+[5.272s] writing dependency_links to ../../../../build/key_teleop/key_teleop.egg-info/dependency_links.txt
+[5.274s] writing entry points to ../../../../build/key_teleop/key_teleop.egg-info/entry_points.txt
+[5.275s] writing requirements to ../../../../build/key_teleop/key_teleop.egg-info/requires.txt
+[5.275s] writing top-level names to ../../../../build/key_teleop/key_teleop.egg-info/top_level.txt
+[5.293s] reading manifest file '../../../../build/key_teleop/key_teleop.egg-info/SOURCES.txt'
+[5.295s] adding license file 'LICENSE'
+[5.299s] writing manifest file '../../../../build/key_teleop/key_teleop.egg-info/SOURCES.txt'
+[5.300s] running build
+[5.300s] running build_py
+[5.303s] running install
+[5.307s] running install_lib
+[5.314s] running install_data
+[5.316s] running install_egg_info
+[5.323s] removing '/home/yundo/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/key_teleop-0.3.0-py3.8.egg-info' (and everything under it)
+[5.325s] Copying ../../../../build/key_teleop/key_teleop.egg-info to /home/yundo/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/key_teleop-0.3.0-py3.8.egg-info
+[5.329s] running install_scripts
+[5.413s] Installing key_teleop script to /home/yundo/f1tenth_ws/install/key_teleop/lib/key_teleop
+[5.415s] writing list of installed files to '/home/yundo/f1tenth_ws/build/key_teleop/install.log'
+[5.562s] Invoked command in '/home/yundo/f1tenth_ws/src/f1tenth_system/teleop_tools/key_teleop' returned '0': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/home/yundo/f1tenth_ws/build/key_teleop/prefix_override:/home/yundo/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/key_teleop build --build-base /home/yundo/f1tenth_ws/build/key_teleop/build install --record /home/yundo/f1tenth_ws/build/key_teleop/install.log --install-scripts $base/lib/key_teleop --single-version-externally-managed install_data

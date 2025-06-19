@@ -1,0 +1,68 @@
+[0.122s] Invoking command in '/home/yundo/f1tenth_ws/build/vesc_msgs': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/yundo/f1tenth_ws/build/vesc_msgs -- -j4 -l4
+[0.395s] [35m[1mScanning dependencies of target vesc_msgs__cpp[0m
+[0.429s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.469s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.578s] [  5%] Built target vesc_msgs__cpp
+[4.693s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.698s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.763s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.769s] [35m[1mScanning dependencies of target vesc_msgs__rosidl_generator_c[0m
+[4.938s] [ 15%] [32mBuilding C object CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.o[0m
+[5.568s] [ 17%] [32mBuilding C object CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.o[0m
+[6.085s] [ 20%] [32m[1mLinking C shared library libvesc_msgs__rosidl_generator_c.so[0m
+[6.468s] [ 20%] Built target vesc_msgs__rosidl_generator_c
+[6.599s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[8.944s] [35m[1mScanning dependencies of target vesc_msgs__rosidl_typesupport_cpp[0m
+[9.098s] [ 25%] [32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vesc_msgs/msg/vesc_state__type_support.cpp.o[0m
+[9.494s] [35m[1mScanning dependencies of target vesc_msgs__rosidl_typesupport_introspection_cpp[0m
+[9.589s] [ 28%] [32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_state__type_support.cpp.o[0m
+[10.285s] [35m[1mScanning dependencies of target vesc_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[10.459s] [ 30%] [32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_state__type_support.cpp.o[0m
+[11.008s] [ 33%] [32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vesc_msgs/msg/vesc_state_stamped__type_support.cpp.o[0m
+[11.332s] [ 35%] [32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_state_stamped__type_support.cpp.o[0m
+[11.472s] [35m[1mScanning dependencies of target vesc_msgs__rosidl_typesupport_c[0m
+[11.654s] [ 38%] [32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vesc_msgs/msg/vesc_state__type_support.cpp.o[0m
+[12.008s] [ 41%] [32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vesc_msgs/msg/vesc_state_stamped__type_support.cpp.o[0m
+[12.324s] [ 43%] [32m[1mLinking CXX shared library libvesc_msgs__rosidl_typesupport_c.so[0m
+[12.600s] [ 46%] [32m[1mLinking CXX shared library libvesc_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[12.698s] [ 46%] Built target vesc_msgs__rosidl_typesupport_c
+[12.809s] [ 48%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[12.843s] [ 51%] [32m[1mLinking CXX shared library libvesc_msgs__rosidl_typesupport_cpp.so[0m
+[12.877s] [ 53%] [32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_state_stamped__type_support.cpp.o[0m
+[13.128s] [ 53%] Built target vesc_msgs__rosidl_typesupport_cpp
+[13.159s] [ 53%] Built target vesc_msgs__rosidl_typesupport_introspection_cpp
+[14.520s] [ 56%] [32m[1mLinking CXX shared library libvesc_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[14.874s] [ 56%] Built target vesc_msgs__rosidl_typesupport_fastrtps_cpp
+[14.912s] [ 58%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[15.237s] [35m[1mScanning dependencies of target vesc_msgs__rosidl_typesupport_introspection_c[0m
+[15.293s] [ 64%] [32mBuilding C object CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_state__type_support.c.o[0m
+[15.294s] [ 64%] [32mBuilding C object CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support.c.o[0m
+[15.508s] [ 66%] [32m[1mLinking C shared library libvesc_msgs__rosidl_typesupport_introspection_c.so[0m
+[15.627s] [ 66%] Built target vesc_msgs__rosidl_typesupport_introspection_c
+[17.285s] [35m[1mScanning dependencies of target vesc_msgs__rosidl_typesupport_fastrtps_c[0m
+[17.348s] [ 69%] [32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_state__type_support_c.cpp.o[0m
+[17.362s] [ 71%] [32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support_c.cpp.o[0m
+[18.675s] [ 74%] [32m[1mLinking CXX shared library libvesc_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[19.024s] [ 74%] Built target vesc_msgs__rosidl_typesupport_fastrtps_c
+[19.061s] [35m[1mScanning dependencies of target vesc_msgs[0m
+[19.098s] [ 74%] Built target vesc_msgs
+[19.134s] [35m[1mScanning dependencies of target vesc_msgs__py[0m
+[19.174s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[23.544s] [ 76%] Built target vesc_msgs__py
+[23.579s] [35m[1mScanning dependencies of target vesc_msgs__python[0m
+[23.654s] [ 79%] [32mBuilding C object CMakeFiles/vesc_msgs__python.dir/rosidl_generator_py/vesc_msgs/msg/_vesc_state_s.c.o[0m
+[23.657s] [ 82%] [32mBuilding C object CMakeFiles/vesc_msgs__python.dir/rosidl_generator_py/vesc_msgs/msg/_vesc_state_stamped_s.c.o[0m
+[24.068s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/vesc_msgs/libvesc_msgs__python.so[0m
+[24.225s] [ 84%] Built target vesc_msgs__python
+[24.262s] [35m[1mScanning dependencies of target vesc_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[24.262s] [35m[1mScanning dependencies of target vesc_msgs__rosidl_typesupport_c__pyext[0m
+[24.263s] [35m[1mScanning dependencies of target vesc_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[24.337s] [ 87%] [32mBuilding C object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[24.350s] [ 89%] [32mBuilding C object CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[24.357s] [ 92%] [32mBuilding C object CMakeFiles/vesc_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[24.662s] [ 94%] [32m[1mLinking CXX shared library rosidl_generator_py/vesc_msgs/vesc_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so[0m
+[24.670s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/vesc_msgs/vesc_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[24.687s] [100%] [32m[1mLinking C shared library rosidl_generator_py/vesc_msgs/vesc_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[24.844s] [100%] Built target vesc_msgs__rosidl_typesupport_c__pyext
+[24.858s] [100%] Built target vesc_msgs__rosidl_typesupport_introspection_c__pyext
+[24.947s] [100%] Built target vesc_msgs__rosidl_typesupport_fastrtps_c__pyext

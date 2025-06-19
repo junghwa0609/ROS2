@@ -1,0 +1,2 @@
+Invoking command in '/home/yundo/f1tenth_ws/build/ackermann_mux': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/yundo/f1tenth_ws/src/f1tenth_system/ackermann_mux -DCMAKE_INSTALL_PREFIX=/home/yundo/f1tenth_ws/install/ackermann_mux
+Invoked command in '/home/yundo/f1tenth_ws/build/ackermann_mux' returned '1': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/yundo/f1tenth_ws/src/f1tenth_system/ackermann_mux -DCMAKE_INSTALL_PREFIX=/home/yundo/f1tenth_ws/install/ackermann_mux
