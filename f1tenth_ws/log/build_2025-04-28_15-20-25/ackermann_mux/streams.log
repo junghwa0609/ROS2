@@ -1,0 +1,38 @@
+[0.444s] Invoking command in '/home/yundo/f1tenth_ws/build/ackermann_mux': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/teleop_tools:/home/yundo/f1tenth_ws/install/teleop_tools_msgs:/home/yundo/f1tenth_ws/install/ackermann_mux:/home/yundo/vesc_ws/install/vesc:/home/yundo/vesc_ws/install/vesc_driver:/home/yundo/vesc_ws/install/vesc_ackermann:/home/yundo/f1tenth_ws/install/f1tenth_stack:/home/yundo/f1tenth_ws/install/joy_teleop:/home/yundo/f1tenth_ws/install/mouse_teleop:/home/yundo/f1tenth_ws/install/key_teleop:/opt/ros/foxy:/home/yundo/vesc_ws/install/vesc_msgs:/home/yundo/vesc_ws/install/udp_driver:/home/yundo/vesc_ws/install/io_context:/home/yundo/vesc_ws/install/asio_cmake_module:/home/yundo/ydlidar_ws/install/ydlidar_ros2_driver /usr/bin/cmake --build /home/yundo/f1tenth_ws/build/ackermann_mux -- -j4 -l4
+[1.974s] [100%] Built target ackermann_mux
+[3.305s] Invoked command in '/home/yundo/f1tenth_ws/build/ackermann_mux' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/teleop_tools:/home/yundo/f1tenth_ws/install/teleop_tools_msgs:/home/yundo/f1tenth_ws/install/ackermann_mux:/home/yundo/vesc_ws/install/vesc:/home/yundo/vesc_ws/install/vesc_driver:/home/yundo/vesc_ws/install/vesc_ackermann:/home/yundo/f1tenth_ws/install/f1tenth_stack:/home/yundo/f1tenth_ws/install/joy_teleop:/home/yundo/f1tenth_ws/install/mouse_teleop:/home/yundo/f1tenth_ws/install/key_teleop:/opt/ros/foxy:/home/yundo/vesc_ws/install/vesc_msgs:/home/yundo/vesc_ws/install/udp_driver:/home/yundo/vesc_ws/install/io_context:/home/yundo/vesc_ws/install/asio_cmake_module:/home/yundo/ydlidar_ws/install/ydlidar_ros2_driver /usr/bin/cmake --build /home/yundo/f1tenth_ws/build/ackermann_mux -- -j4 -l4
+[3.505s] Invoking command in '/home/yundo/f1tenth_ws/build/ackermann_mux': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/teleop_tools:/home/yundo/f1tenth_ws/install/teleop_tools_msgs:/home/yundo/f1tenth_ws/install/ackermann_mux:/home/yundo/vesc_ws/install/vesc:/home/yundo/vesc_ws/install/vesc_driver:/home/yundo/vesc_ws/install/vesc_ackermann:/home/yundo/f1tenth_ws/install/f1tenth_stack:/home/yundo/f1tenth_ws/install/joy_teleop:/home/yundo/f1tenth_ws/install/mouse_teleop:/home/yundo/f1tenth_ws/install/key_teleop:/opt/ros/foxy:/home/yundo/vesc_ws/install/vesc_msgs:/home/yundo/vesc_ws/install/udp_driver:/home/yundo/vesc_ws/install/io_context:/home/yundo/vesc_ws/install/asio_cmake_module:/home/yundo/ydlidar_ws/install/ydlidar_ros2_driver /usr/bin/cmake --install /home/yundo/f1tenth_ws/build/ackermann_mux
+[3.549s] -- Install configuration: ""
+[3.550s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/lib/ackermann_mux/ackermann_mux
+[3.551s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/launch
+[3.552s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/launch/ackermann_mux_launch.py
+[3.553s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config
+[3.554s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_locks.yaml
+[3.554s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_topics.yaml
+[3.555s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config/joystick.yaml
+[3.555s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/include
+[3.556s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/include/ackermann_mux
+[3.556s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics_status.hpp
+[3.556s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/utils.hpp
+[3.557s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux.hpp
+[3.557s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics.hpp
+[3.558s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/topic_handle.hpp
+[3.559s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/params_helpers.hpp
+[3.559s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ament_index/resource_index/package_run_dependencies/ackermann_mux
+[3.560s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ament_index/resource_index/parent_prefix_path/ackermann_mux
+[3.560s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.sh
+[3.563s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.dsv
+[3.565s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/path.sh
+[3.566s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/path.dsv
+[3.566s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.bash
+[3.567s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.sh
+[3.569s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.zsh
+[3.570s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.dsv
+[3.570s] -- Installing: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/package.dsv
+[3.571s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ament_index/resource_index/packages/ackermann_mux
+[3.571s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.590s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.590s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig.cmake
+[3.591s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig-version.cmake
+[3.591s] -- Up-to-date: /home/yundo/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/package.xml
+[3.592s] Invoked command in '/home/yundo/f1tenth_ws/build/ackermann_mux' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/teleop_tools:/home/yundo/f1tenth_ws/install/teleop_tools_msgs:/home/yundo/f1tenth_ws/install/ackermann_mux:/home/yundo/vesc_ws/install/vesc:/home/yundo/vesc_ws/install/vesc_driver:/home/yundo/vesc_ws/install/vesc_ackermann:/home/yundo/f1tenth_ws/install/f1tenth_stack:/home/yundo/f1tenth_ws/install/joy_teleop:/home/yundo/f1tenth_ws/install/mouse_teleop:/home/yundo/f1tenth_ws/install/key_teleop:/opt/ros/foxy:/home/yundo/vesc_ws/install/vesc_msgs:/home/yundo/vesc_ws/install/udp_driver:/home/yundo/vesc_ws/install/io_context:/home/yundo/vesc_ws/install/asio_cmake_module:/home/yundo/ydlidar_ws/install/ydlidar_ros2_driver /usr/bin/cmake --install /home/yundo/f1tenth_ws/build/ackermann_mux

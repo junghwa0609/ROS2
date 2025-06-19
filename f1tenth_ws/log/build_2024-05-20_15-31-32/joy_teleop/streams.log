@@ -1,0 +1,24 @@
+[3.740s] Invoking command in '/home/yundo/f1tenth_ws/src/f1tenth_system/teleop_tools/joy_teleop': AMENT_PREFIX_PATH=/home/yundo/f1tenth_ws/install/teleop_tools_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/teleop_tools_msgs LD_LIBRARY_PATH=/home/yundo/f1tenth_ws/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yundo/f1tenth_ws/build/joy_teleop/prefix_override:/home/yundo/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/yundo/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/joy_teleop build --build-base /home/yundo/f1tenth_ws/build/joy_teleop/build install --record /home/yundo/f1tenth_ws/build/joy_teleop/install.log --install-scripts $base/lib/joy_teleop --single-version-externally-managed install_data
+[5.044s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[5.045s]   warnings.warn(
+[5.194s] running egg_info
+[5.199s] writing ../../../../build/joy_teleop/joy_teleop.egg-info/PKG-INFO
+[5.200s] writing dependency_links to ../../../../build/joy_teleop/joy_teleop.egg-info/dependency_links.txt
+[5.201s] writing entry points to ../../../../build/joy_teleop/joy_teleop.egg-info/entry_points.txt
+[5.202s] writing requirements to ../../../../build/joy_teleop/joy_teleop.egg-info/requires.txt
+[5.203s] writing top-level names to ../../../../build/joy_teleop/joy_teleop.egg-info/top_level.txt
+[5.216s] reading manifest file '../../../../build/joy_teleop/joy_teleop.egg-info/SOURCES.txt'
+[5.222s] writing manifest file '../../../../build/joy_teleop/joy_teleop.egg-info/SOURCES.txt'
+[5.223s] running build
+[5.223s] running build_py
+[5.226s] running install
+[5.230s] running install_lib
+[5.237s] running install_data
+[5.239s] running install_egg_info
+[5.246s] removing '/home/yundo/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop-0.3.0-py3.8.egg-info' (and everything under it)
+[5.247s] Copying ../../../../build/joy_teleop/joy_teleop.egg-info to /home/yundo/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop-0.3.0-py3.8.egg-info
+[5.251s] running install_scripts
+[5.333s] Installing incrementer_server script to /home/yundo/f1tenth_ws/install/joy_teleop/lib/joy_teleop
+[5.334s] Installing joy_teleop script to /home/yundo/f1tenth_ws/install/joy_teleop/lib/joy_teleop
+[5.335s] writing list of installed files to '/home/yundo/f1tenth_ws/build/joy_teleop/install.log'
+[5.441s] Invoked command in '/home/yundo/f1tenth_ws/src/f1tenth_system/teleop_tools/joy_teleop' returned '0': AMENT_PREFIX_PATH=/home/yundo/f1tenth_ws/install/teleop_tools_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/teleop_tools_msgs LD_LIBRARY_PATH=/home/yundo/f1tenth_ws/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yundo/f1tenth_ws/build/joy_teleop/prefix_override:/home/yundo/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/yundo/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/joy_teleop build --build-base /home/yundo/f1tenth_ws/build/joy_teleop/build install --record /home/yundo/f1tenth_ws/build/joy_teleop/install.log --install-scripts $base/lib/joy_teleop --single-version-externally-managed install_data

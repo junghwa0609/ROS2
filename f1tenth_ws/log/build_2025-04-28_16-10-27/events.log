@@ -1,0 +1,138 @@
+[0.000000] (-) TimerEvent: {}
+[0.001418] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.001675] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.001854] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.002006] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.002149] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.002289] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.002429] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.002578] (safety_node) JobQueued: {'identifier': 'safety_node', 'dependencies': OrderedDict()}
+[0.002752] (safety_node) JobStarted: {'identifier': 'safety_node'}
+[0.050550] (safety_node) JobProgress: {'identifier': 'safety_node', 'progress': 'cmake'}
+[0.053424] (safety_node) JobProgress: {'identifier': 'safety_node', 'progress': 'build'}
+[0.056897] (safety_node) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yundo/f1tenth_ws/build/safety_node', '--', '-j4', '-l4'], 'cwd': '/home/yundo/f1tenth_ws/build/safety_node', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('OPENBLAS_CORETYPE', 'ARMV8'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('BYOBU_SED', 'sed'), ('BYOBU_LIGHT', '\\#EEEEEE'), ('BYOBU_EDITOR', 'sensible-editor'), ('USER', 'yundo'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '8048'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yundo/f1tenth_ws/install/teleop_tools_msgs/lib:/home/yundo/vesc_ws/install/vesc_driver/lib:/home/yundo/vesc_ws/install/vesc_ackermann/lib:/home/yundo/vesc_ws/install/vesc_msgs/lib:/home/yundo/vesc_ws/install/udp_driver/lib:/home/yundo/vesc_ws/install/io_context/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/yundo'), ('BYOBU_TIME', '%H:%M:%S'), ('OLDPWD', '/home/yundo'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '32.6.1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson Nano Developer Kit'), ('BYOBU_PREFIX', '/usr'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '7865'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '17600'), ('BYOBU_WINDOW_NAME', '-'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/yundo/f1tenth_ws/install:/home/yundo/vesc_ws/install:/home/yundo/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'yundo'), ('BYOBU_ULIMIT', 'ulimit'), ('BYOBU_HIGHLIGHT', '\\#DD4814'), ('JETSON_MODULE', 'NVIDIA Jetson Nano (4 GB ram)'), ('BYOBU_ACCENT', '\\#75507B'), ('JETSON_SERIAL_NUMBER', '1420622012604'), ('BYOBU_READLINK', 'readlink'), ('BYOBU_DISTRO', 'Ubuntu'), ('JOURNAL_STREAM', '8:44042'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Porg'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'yundo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nano:@/tmp/.ICE-unix/8085,unix/nano:/tmp/.ICE-unix/8085'), ('INVOCATION_ID', '86c56c0d8508448abc38a193b5c702e7'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yundo/f1tenth_ws/install/safety_node:/home/yundo/f1tenth_ws/install/teleop_tools:/home/yundo/f1tenth_ws/install/f1tenth_stack:/home/yundo/f1tenth_ws/install/joy_teleop:/home/yundo/f1tenth_ws/install/teleop_tools_msgs:/home/yundo/f1tenth_ws/install/mouse_teleop:/home/yundo/f1tenth_ws/install/key_teleop:/home/yundo/f1tenth_ws/install/ackermann_mux:/home/yundo/vesc_ws/install/vesc:/home/yundo/vesc_ws/install/vesc_driver:/home/yundo/vesc_ws/install/vesc_ackermann:/home/yundo/vesc_ws/install/vesc_msgs:/home/yundo/vesc_ws/install/udp_driver:/home/yundo/vesc_ws/install/io_context:/home/yundo/vesc_ws/install/asio_cmake_module:/home/yundo/ydlidar_ws/install/ydlidar_ros2_driver:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:02251b3a-a246-4696-9f23-ced2de322a40'), ('QT_ACCESSIBILITY', '1'), ('BYOBU_DATE', '%Y-%m-%d'), ('GDMSESSION', 'ubuntu'), ('BYOBU_PYTHON', 'python3'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3448'), ('BYOBU_CONFIG_DIR', '/home/yundo/.byobu'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('BYOBU_PAGER', 'sensible-pager'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('BYOBU_DARK', '\\#333333'), ('QT_IM_MODULE', 'ibus'), ('BYOBU_RUN_DIR', '/dev/shm/byobu-yundo-UySaj6Zp'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/yundo/f1tenth_ws/build/safety_node'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('BYOBU_BACKEND', 'tmux'), ('PYTHONPATH', '/home/yundo/f1tenth_ws/install/safety_node/lib/python3.8/site-packages:/home/yundo/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/yundo/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/yundo/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/yundo/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/yundo/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/home/yundo/vesc_ws/install/vesc_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/yundo/f1tenth_ws/install/safety_node:/home/yundo/f1tenth_ws/install/teleop_tools:/home/yundo/f1tenth_ws/install/teleop_tools_msgs:/home/yundo/f1tenth_ws/install/ackermann_mux:/home/yundo/vesc_ws/install/vesc:/home/yundo/vesc_ws/install/vesc_driver:/home/yundo/vesc_ws/install/vesc_ackermann:/home/yundo/f1tenth_ws/install/f1tenth_stack:/home/yundo/f1tenth_ws/install/joy_teleop:/home/yundo/f1tenth_ws/install/mouse_teleop:/home/yundo/f1tenth_ws/install/key_teleop:/opt/ros/foxy:/home/yundo/vesc_ws/install/vesc_msgs:/home/yundo/vesc_ws/install/udp_driver:/home/yundo/vesc_ws/install/io_context:/home/yundo/vesc_ws/install/asio_cmake_module:/home/yundo/ydlidar_ws/install/ydlidar_ros2_driver'), ('JETSON_P_NUMBER', 'p3448-0000')]), 'shell': False}
+[0.097922] (-) TimerEvent: {}
+[0.199078] (-) TimerEvent: {}
+[0.200879] (safety_node) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.299339] (-) TimerEvent: {}
+[0.323827] (safety_node) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.399495] (-) TimerEvent: {}
+[0.500302] (-) TimerEvent: {}
+[0.601024] (-) TimerEvent: {}
+[0.701633] (-) TimerEvent: {}
+[0.802550] (-) TimerEvent: {}
+[0.903548] (-) TimerEvent: {}
+[1.004221] (-) TimerEvent: {}
+[1.105004] (-) TimerEvent: {}
+[1.206627] (-) TimerEvent: {}
+[1.307469] (-) TimerEvent: {}
+[1.409236] (-) TimerEvent: {}
+[1.469062] (safety_node) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.509416] (-) TimerEvent: {}
+[1.610465] (-) TimerEvent: {}
+[1.700742] (safety_node) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.710625] (-) TimerEvent: {}
+[1.723736] (safety_node) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.810840] (-) TimerEvent: {}
+[1.911804] (-) TimerEvent: {}
+[2.013162] (-) TimerEvent: {}
+[2.114414] (-) TimerEvent: {}
+[2.215124] (-) TimerEvent: {}
+[2.316481] (-) TimerEvent: {}
+[2.389195] (safety_node) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.416651] (-) TimerEvent: {}
+[2.517790] (-) TimerEvent: {}
+[2.618777] (-) TimerEvent: {}
+[2.667037] (safety_node) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[2.678653] (safety_node) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.718951] (-) TimerEvent: {}
+[2.820065] (-) TimerEvent: {}
+[2.921207] (-) TimerEvent: {}
+[3.022193] (-) TimerEvent: {}
+[3.123363] (-) TimerEvent: {}
+[3.224096] (-) TimerEvent: {}
+[3.324771] (-) TimerEvent: {}
+[3.426244] (-) TimerEvent: {}
+[3.527186] (-) TimerEvent: {}
+[3.628031] (-) TimerEvent: {}
+[3.730536] (-) TimerEvent: {}
+[3.831576] (-) TimerEvent: {}
+[3.835134] (safety_node) StdoutLine: {'line': b'-- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)\n'}
+[3.837607] (safety_node) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[3.931746] (-) TimerEvent: {}
+[4.033975] (-) TimerEvent: {}
+[4.136546] (-) TimerEvent: {}
+[4.237870] (-) TimerEvent: {}
+[4.339816] (-) TimerEvent: {}
+[4.440805] (-) TimerEvent: {}
+[4.541815] (-) TimerEvent: {}
+[4.643237] (-) TimerEvent: {}
+[4.744182] (-) TimerEvent: {}
+[4.767241] (safety_node) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)\n'}
+[4.844374] (-) TimerEvent: {}
+[4.945989] (-) TimerEvent: {}
+[4.967505] (safety_node) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[5.046233] (-) TimerEvent: {}
+[5.147490] (-) TimerEvent: {}
+[5.249273] (-) TimerEvent: {}
+[5.351351] (-) TimerEvent: {}
+[5.452152] (-) TimerEvent: {}
+[5.553361] (-) TimerEvent: {}
+[5.654834] (-) TimerEvent: {}
+[5.676416] (safety_node) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[5.755054] (-) TimerEvent: {}
+[5.857518] (-) TimerEvent: {}
+[5.958760] (-) TimerEvent: {}
+[6.060002] (-) TimerEvent: {}
+[6.161343] (-) TimerEvent: {}
+[6.208515] (safety_node) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[6.214599] (safety_node) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[6.215264] (safety_node) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[6.215767] (safety_node) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[6.219601] (safety_node) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[6.220201] (safety_node) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[6.221736] (safety_node) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[6.224392] (safety_node) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.226272] (safety_node) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[6.230518] (safety_node) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[6.231040] (safety_node) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[6.232424] (safety_node) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.246635] (safety_node) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.261752] (-) TimerEvent: {}
+[6.263535] (safety_node) StdoutLine: {'line': b'-- Generating done\n'}
+[6.271256] (safety_node) StdoutLine: {'line': b'-- Build files have been written to: /home/yundo/f1tenth_ws/build/safety_node\n'}
+[6.361923] (-) TimerEvent: {}
+[6.424777] (safety_node) CommandEnded: {'returncode': 0}
+[6.433548] (safety_node) JobProgress: {'identifier': 'safety_node', 'progress': 'install'}
+[6.462120] (-) TimerEvent: {}
+[6.512933] (safety_node) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yundo/f1tenth_ws/build/safety_node'], 'cwd': '/home/yundo/f1tenth_ws/build/safety_node', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('OPENBLAS_CORETYPE', 'ARMV8'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('BYOBU_SED', 'sed'), ('BYOBU_LIGHT', '\\#EEEEEE'), ('BYOBU_EDITOR', 'sensible-editor'), ('USER', 'yundo'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '8048'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yundo/f1tenth_ws/install/teleop_tools_msgs/lib:/home/yundo/vesc_ws/install/vesc_driver/lib:/home/yundo/vesc_ws/install/vesc_ackermann/lib:/home/yundo/vesc_ws/install/vesc_msgs/lib:/home/yundo/vesc_ws/install/udp_driver/lib:/home/yundo/vesc_ws/install/io_context/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/yundo'), ('BYOBU_TIME', '%H:%M:%S'), ('OLDPWD', '/home/yundo'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '32.6.1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson Nano Developer Kit'), ('BYOBU_PREFIX', '/usr'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '7865'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '17600'), ('BYOBU_WINDOW_NAME', '-'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/yundo/f1tenth_ws/install:/home/yundo/vesc_ws/install:/home/yundo/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'yundo'), ('BYOBU_ULIMIT', 'ulimit'), ('BYOBU_HIGHLIGHT', '\\#DD4814'), ('JETSON_MODULE', 'NVIDIA Jetson Nano (4 GB ram)'), ('BYOBU_ACCENT', '\\#75507B'), ('JETSON_SERIAL_NUMBER', '1420622012604'), ('BYOBU_READLINK', 'readlink'), ('BYOBU_DISTRO', 'Ubuntu'), ('JOURNAL_STREAM', '8:44042'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Porg'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'yundo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nano:@/tmp/.ICE-unix/8085,unix/nano:/tmp/.ICE-unix/8085'), ('INVOCATION_ID', '86c56c0d8508448abc38a193b5c702e7'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yundo/f1tenth_ws/install/safety_node:/home/yundo/f1tenth_ws/install/teleop_tools:/home/yundo/f1tenth_ws/install/f1tenth_stack:/home/yundo/f1tenth_ws/install/joy_teleop:/home/yundo/f1tenth_ws/install/teleop_tools_msgs:/home/yundo/f1tenth_ws/install/mouse_teleop:/home/yundo/f1tenth_ws/install/key_teleop:/home/yundo/f1tenth_ws/install/ackermann_mux:/home/yundo/vesc_ws/install/vesc:/home/yundo/vesc_ws/install/vesc_driver:/home/yundo/vesc_ws/install/vesc_ackermann:/home/yundo/vesc_ws/install/vesc_msgs:/home/yundo/vesc_ws/install/udp_driver:/home/yundo/vesc_ws/install/io_context:/home/yundo/vesc_ws/install/asio_cmake_module:/home/yundo/ydlidar_ws/install/ydlidar_ros2_driver:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:02251b3a-a246-4696-9f23-ced2de322a40'), ('QT_ACCESSIBILITY', '1'), ('BYOBU_DATE', '%Y-%m-%d'), ('GDMSESSION', 'ubuntu'), ('BYOBU_PYTHON', 'python3'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3448'), ('BYOBU_CONFIG_DIR', '/home/yundo/.byobu'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('BYOBU_PAGER', 'sensible-pager'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('BYOBU_DARK', '\\#333333'), ('QT_IM_MODULE', 'ibus'), ('BYOBU_RUN_DIR', '/dev/shm/byobu-yundo-UySaj6Zp'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/yundo/f1tenth_ws/build/safety_node'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('BYOBU_BACKEND', 'tmux'), ('PYTHONPATH', '/home/yundo/f1tenth_ws/install/safety_node/lib/python3.8/site-packages:/home/yundo/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/yundo/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/yundo/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/yundo/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/yundo/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/home/yundo/vesc_ws/install/vesc_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/yundo/f1tenth_ws/install/safety_node:/home/yundo/f1tenth_ws/install/teleop_tools:/home/yundo/f1tenth_ws/install/teleop_tools_msgs:/home/yundo/f1tenth_ws/install/ackermann_mux:/home/yundo/vesc_ws/install/vesc:/home/yundo/vesc_ws/install/vesc_driver:/home/yundo/vesc_ws/install/vesc_ackermann:/home/yundo/f1tenth_ws/install/f1tenth_stack:/home/yundo/f1tenth_ws/install/joy_teleop:/home/yundo/f1tenth_ws/install/mouse_teleop:/home/yundo/f1tenth_ws/install/key_teleop:/opt/ros/foxy:/home/yundo/vesc_ws/install/vesc_msgs:/home/yundo/vesc_ws/install/udp_driver:/home/yundo/vesc_ws/install/io_context:/home/yundo/vesc_ws/install/asio_cmake_module:/home/yundo/ydlidar_ws/install/ydlidar_ros2_driver'), ('JETSON_P_NUMBER', 'p3448-0000')]), 'shell': False}
+[6.562332] (-) TimerEvent: {}
+[6.574377] (safety_node) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.575991] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/environment/pythonpath.sh\n'}
+[6.576844] (safety_node) StdoutLine: {'line': b'-- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/environment/pythonpath.dsv\n'}
+[6.578505] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/yundo/f1tenth_ws/install/safety_node/lib/python3.8/site-packages/safety_node\n'}
+[6.580060] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/yundo/f1tenth_ws/install/safety_node/lib/python3.8/site-packages/safety_node/safety_node.py\n'}
+[6.580738] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/yundo/f1tenth_ws/install/safety_node/lib/python3.8/site-packages/safety_node/__init__.py\n'}
+[6.663446] (-) TimerEvent: {}
+[6.773922] (safety_node) StdoutLine: {'line': b"Listing '/home/yundo/f1tenth_ws/install/safety_node/lib/python3.8/site-packages/safety_node'...\n"}
+[6.774629] (-) TimerEvent: {}
+[6.800383] (safety_node) StdoutLine: {'line': b'-- Installing: /home/yundo/f1tenth_ws/install/safety_node/lib/safety_node/safety_node.py\n'}
+[6.803418] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/yundo/f1tenth_ws/install/safety_node/share/ament_index/resource_index/package_run_dependencies/safety_node\n'}
+[6.803924] (safety_node) StdoutLine: {'line': b'-- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/ament_index/resource_index/parent_prefix_path/safety_node\n'}
+[6.804331] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/environment/ament_prefix_path.sh\n'}
+[6.804729] (safety_node) StdoutLine: {'line': b'-- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/environment/ament_prefix_path.dsv\n'}
+[6.805650] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/environment/path.sh\n'}
+[6.806145] (safety_node) StdoutLine: {'line': b'-- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/environment/path.dsv\n'}
+[6.807533] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/local_setup.bash\n'}
+[6.808670] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/local_setup.sh\n'}
+[6.809391] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/local_setup.zsh\n'}
+[6.809827] (safety_node) StdoutLine: {'line': b'-- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/local_setup.dsv\n'}
+[6.810210] (safety_node) StdoutLine: {'line': b'-- Installing: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/package.dsv\n'}
+[6.810595] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/yundo/f1tenth_ws/install/safety_node/share/ament_index/resource_index/packages/safety_node\n'}
+[6.811031] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/cmake/safety_nodeConfig.cmake\n'}
+[6.811475] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/cmake/safety_nodeConfig-version.cmake\n'}
+[6.813145] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/yundo/f1tenth_ws/install/safety_node/share/safety_node/package.xml\n'}
+[6.817781] (safety_node) CommandEnded: {'returncode': 0}
+[6.876589] (-) TimerEvent: {}
+[6.928579] (safety_node) JobEnded: {'identifier': 'safety_node', 'rc': 0}
+[6.931691] (-) EventReactorShutdown: {}

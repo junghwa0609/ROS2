@@ -1,0 +1,4 @@
+Invoking command in '/home/yundo/f1tenth_ws/build/vesc_msgs': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/yundo/f1tenth_ws/build/vesc_msgs -- -j4 -l4
+Invoked command in '/home/yundo/f1tenth_ws/build/vesc_msgs' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/yundo/f1tenth_ws/build/vesc_msgs -- -j4 -l4
+Invoking command in '/home/yundo/f1tenth_ws/build/vesc_msgs': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/yundo/f1tenth_ws/build/vesc_msgs
+Invoked command in '/home/yundo/f1tenth_ws/build/vesc_msgs' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/yundo/f1tenth_ws/build/vesc_msgs

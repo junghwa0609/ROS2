@@ -1,0 +1,42 @@
+[0.085s] Invoking command in '/home/yundo/f1tenth_ws/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yundo/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/yundo/f1tenth_ws/build/vesc_ackermann -- -j4 -l4
+[0.567s] [ 28%] Built target ackermann_to_vesc_node
+[0.610s] [ 57%] Built target vesc_to_odom_node
+[0.637s] [100%] Built target vesc_ackermann
+[0.726s] Invoked command in '/home/yundo/f1tenth_ws/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yundo/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/yundo/f1tenth_ws/build/vesc_ackermann -- -j4 -l4
+[1.007s] Invoking command in '/home/yundo/f1tenth_ws/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yundo/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/yundo/f1tenth_ws/build/vesc_ackermann
+[1.090s] -- Install configuration: ""
+[1.096s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node
+[1.104s] -- Set runtime path of "/home/yundo/f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node" to ""
+[1.106s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node
+[1.109s] -- Set runtime path of "/home/yundo/f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node" to ""
+[1.110s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/include
+[1.110s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/include/vesc_ackermann
+[1.111s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp
+[1.113s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp
+[1.115s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.sh
+[1.123s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.dsv
+[1.124s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/lib/libvesc_ackermann.so
+[1.164s] -- Set runtime path of "/home/yundo/f1tenth_ws/install/vesc_ackermann/lib/libvesc_ackermann.so" to ""
+[1.165s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/launch
+[1.168s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/launch/ackermann_to_vesc_node.launch.xml
+[1.171s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/launch/vesc_to_odom_node.launch.xml
+[1.180s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann
+[1.181s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann
+[1.182s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.sh
+[1.183s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.dsv
+[1.184s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.sh
+[1.184s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.dsv
+[1.185s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.bash
+[1.187s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.sh
+[1.199s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.zsh
+[1.200s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.dsv
+[1.201s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/package.dsv
+[1.202s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/packages/vesc_ackermann
+[1.203s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/rclcpp_components/vesc_ackermann
+[1.204s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.205s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.206s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_libraries-extras.cmake
+[1.207s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig.cmake
+[1.208s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig-version.cmake
+[1.210s] -- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/package.xml
+[1.223s] Invoked command in '/home/yundo/f1tenth_ws/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/yundo/f1tenth_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yundo/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/yundo/f1tenth_ws/build/vesc_ackermann

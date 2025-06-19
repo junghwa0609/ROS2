@@ -1,0 +1,2 @@
+Invoking command in '/home/yundo/f1tenth_ws/build/vesc_msgs': BYOBU_DATE=%Y-%m-%d /usr/bin/cmake /home/yundo/f1tenth_ws/src/vesc/vesc_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/yundo/f1tenth_ws/install/vesc_msgs
+Invoked command in '/home/yundo/f1tenth_ws/build/vesc_msgs' returned '1': BYOBU_DATE=%Y-%m-%d /usr/bin/cmake /home/yundo/f1tenth_ws/src/vesc/vesc_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/yundo/f1tenth_ws/install/vesc_msgs

@@ -1,0 +1,38 @@
+[ 28%] Built target ackermann_to_vesc_node
+[ 57%] Built target vesc_to_odom_node
+[100%] Built target vesc_ackermann
+-- Install configuration: ""
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node
+-- Set runtime path of "/home/yundo/f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node" to ""
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node
+-- Set runtime path of "/home/yundo/f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node" to ""
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/include
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/include/vesc_ackermann
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.sh
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.dsv
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/lib/libvesc_ackermann.so
+-- Set runtime path of "/home/yundo/f1tenth_ws/install/vesc_ackermann/lib/libvesc_ackermann.so" to ""
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/launch
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/launch/ackermann_to_vesc_node.launch.xml
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/launch/vesc_to_odom_node.launch.xml
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.sh
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.dsv
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.sh
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.dsv
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.bash
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.sh
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.zsh
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.dsv
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/package.dsv
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/packages/vesc_ackermann
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/rclcpp_components/vesc_ackermann
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig.cmake
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig-version.cmake
+-- Installing: /home/yundo/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/package.xml

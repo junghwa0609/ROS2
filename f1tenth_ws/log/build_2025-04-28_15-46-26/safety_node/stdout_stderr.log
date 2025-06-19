@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target safety_node[0m
+make[2]: *** No rule to make target '/home/yundo/f1tenth_ws/src/f1tenth_system/safety_node/src/safety_node.cpp', needed by 'CMakeFiles/safety_node.dir/src/safety_node.cpp.o'.  Stop.
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/safety_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

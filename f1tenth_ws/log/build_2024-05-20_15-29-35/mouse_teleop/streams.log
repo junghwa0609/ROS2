@@ -1,0 +1,44 @@
+[6.531s] Invoking command in '/home/yundo/f1tenth_ws/src/f1tenth_system/teleop_tools/mouse_teleop': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/home/yundo/f1tenth_ws/build/mouse_teleop/prefix_override:/home/yundo/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/mouse_teleop build --build-base /home/yundo/f1tenth_ws/build/mouse_teleop/build install --record /home/yundo/f1tenth_ws/build/mouse_teleop/install.log --install-scripts $base/lib/mouse_teleop --single-version-externally-managed install_data
+[8.173s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[8.173s]   warnings.warn(
+[8.368s] running egg_info
+[8.372s] creating ../../../../build/mouse_teleop/mouse_teleop.egg-info
+[8.373s] writing ../../../../build/mouse_teleop/mouse_teleop.egg-info/PKG-INFO
+[8.375s] writing dependency_links to ../../../../build/mouse_teleop/mouse_teleop.egg-info/dependency_links.txt
+[8.377s] writing entry points to ../../../../build/mouse_teleop/mouse_teleop.egg-info/entry_points.txt
+[8.379s] writing requirements to ../../../../build/mouse_teleop/mouse_teleop.egg-info/requires.txt
+[8.380s] writing top-level names to ../../../../build/mouse_teleop/mouse_teleop.egg-info/top_level.txt
+[8.391s] writing manifest file '../../../../build/mouse_teleop/mouse_teleop.egg-info/SOURCES.txt'
+[8.400s] reading manifest file '../../../../build/mouse_teleop/mouse_teleop.egg-info/SOURCES.txt'
+[8.402s] adding license file 'LICENSE'
+[8.407s] writing manifest file '../../../../build/mouse_teleop/mouse_teleop.egg-info/SOURCES.txt'
+[8.408s] running build
+[8.409s] running build_py
+[8.411s] creating /home/yundo/f1tenth_ws/build/mouse_teleop/build
+[8.412s] creating /home/yundo/f1tenth_ws/build/mouse_teleop/build/lib
+[8.414s] creating /home/yundo/f1tenth_ws/build/mouse_teleop/build/lib/mouse_teleop
+[8.416s] copying mouse_teleop/mouse_teleop.py -> /home/yundo/f1tenth_ws/build/mouse_teleop/build/lib/mouse_teleop
+[8.418s] copying mouse_teleop/__init__.py -> /home/yundo/f1tenth_ws/build/mouse_teleop/build/lib/mouse_teleop
+[8.421s] running install
+[8.426s] running install_lib
+[8.431s] creating /home/yundo/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages/mouse_teleop
+[8.432s] copying /home/yundo/f1tenth_ws/build/mouse_teleop/build/lib/mouse_teleop/mouse_teleop.py -> /home/yundo/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages/mouse_teleop
+[8.434s] copying /home/yundo/f1tenth_ws/build/mouse_teleop/build/lib/mouse_teleop/__init__.py -> /home/yundo/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages/mouse_teleop
+[8.438s] byte-compiling /home/yundo/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages/mouse_teleop/mouse_teleop.py to mouse_teleop.cpython-38.pyc
+[8.448s] byte-compiling /home/yundo/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages/mouse_teleop/__init__.py to __init__.cpython-38.pyc
+[8.450s] running install_data
+[8.454s] copying package.xml -> /home/yundo/f1tenth_ws/install/mouse_teleop/share/mouse_teleop
+[8.456s] creating /home/yundo/f1tenth_ws/install/mouse_teleop/share/mouse_teleop/config
+[8.457s] copying config/mouse_teleop.yaml -> /home/yundo/f1tenth_ws/install/mouse_teleop/share/mouse_teleop/config
+[8.460s] creating /home/yundo/f1tenth_ws/install/mouse_teleop/share/mouse_teleop/launch
+[8.461s] copying launch/mouse_teleop.launch.py -> /home/yundo/f1tenth_ws/install/mouse_teleop/share/mouse_teleop/launch
+[8.463s] creating /home/yundo/f1tenth_ws/install/mouse_teleop/share/ament_index
+[8.464s] creating /home/yundo/f1tenth_ws/install/mouse_teleop/share/ament_index/resource_index
+[8.466s] creating /home/yundo/f1tenth_ws/install/mouse_teleop/share/ament_index/resource_index/packages
+[8.467s] copying resource/mouse_teleop -> /home/yundo/f1tenth_ws/install/mouse_teleop/share/ament_index/resource_index/packages
+[8.468s] running install_egg_info
+[8.476s] Copying ../../../../build/mouse_teleop/mouse_teleop.egg-info to /home/yundo/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages/mouse_teleop-0.3.0-py3.8.egg-info
+[8.482s] running install_scripts
+[8.576s] Installing mouse_teleop script to /home/yundo/f1tenth_ws/install/mouse_teleop/lib/mouse_teleop
+[8.578s] writing list of installed files to '/home/yundo/f1tenth_ws/build/mouse_teleop/install.log'
+[8.705s] Invoked command in '/home/yundo/f1tenth_ws/src/f1tenth_system/teleop_tools/mouse_teleop' returned '0': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/home/yundo/f1tenth_ws/build/mouse_teleop/prefix_override:/home/yundo/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/mouse_teleop build --build-base /home/yundo/f1tenth_ws/build/mouse_teleop/build install --record /home/yundo/f1tenth_ws/build/mouse_teleop/install.log --install-scripts $base/lib/mouse_teleop --single-version-externally-managed install_data
