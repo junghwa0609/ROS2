@@ -1,0 +1,17 @@
+# ROS 2 / colcon generated files
+/f1tenth_ws/build/
+/f1tenth_ws/install/
+/f1tenth_ws/log/
+
+# Local archives
+/*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/

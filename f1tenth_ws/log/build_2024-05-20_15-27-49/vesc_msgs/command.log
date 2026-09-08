@@ -1,1 +1,0 @@
-Invoking command in '/home/yundo/f1tenth_ws/build/vesc_msgs': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/yundo/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs -DCMAKE_INSTALL_PREFIX=/home/yundo/f1tenth_ws/install/vesc_msgs

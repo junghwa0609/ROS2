@@ -1,3 +1,0 @@
-[0.152s] Invoking command in '/home/yundo/f1tenth_ws/build/vesc_msgs': BYOBU_DATE=%Y-%m-%d /usr/bin/cmake /home/yundo/f1tenth_ws/src/vesc/vesc_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/yundo/f1tenth_ws/install/vesc_msgs
-[0.215s] CMake Error: The source "/home/yundo/f1tenth_ws/src/vesc/vesc_msgs/CMakeLists.txt" does not match the source "/home/yundo/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
-[0.229s] Invoked command in '/home/yundo/f1tenth_ws/build/vesc_msgs' returned '1': BYOBU_DATE=%Y-%m-%d /usr/bin/cmake /home/yundo/f1tenth_ws/src/vesc/vesc_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/yundo/f1tenth_ws/install/vesc_msgs
