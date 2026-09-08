@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # Copyright 2025 JungHwa Lee
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,39 +18,33 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+"""LiDAR distance control with a joystick deadman's switch."""
+
 import math
+
 import rclpy
 from ackermann_msgs.msg import AckermannDriveStamped
 from rclpy.node import Node
 from rclpy.qos import qos_profile_sensor_data
-from sensor_msgs.msg import LaserScan
-
-from safety_node.control import closest_front_distance, target_speed
+from sensor_msgs.msg import Joy, LaserScan
 
 
-class SafetyNode(Node):
-    """Control vehicle speed from the nearest valid front LiDAR reading."""
+class TTCDriverWithJoy(Node):
+    """Drive only while the configured deadman's switch is held."""
 
     def __init__(self):
-        super().__init__('safety_node')
+        super().__init__('ttc_driver_with_joy')
 
-        self.declare_parameter('front_half_angle_deg', 15.0)
-        self.declare_parameter('minimum_valid_distance_m', 0.05)
-        self.declare_parameter('stop_distance_m', 0.5)
-        self.declare_parameter('slow_distance_m', 1.5)
-        self.declare_parameter('slow_speed_mps', 0.5)
-        self.declare_parameter('max_speed_mps', 1.5)
+        self.declare_parameter('deadman_button_index', 5)
+        self.declare_parameter('stop_distance_m', 1.0)
+        self.declare_parameter('drive_speed_mps', 1.0)
 
-        self.front_half_angle_rad = math.radians(
-            self.get_parameter('front_half_angle_deg').value
-        )
-        self.minimum_valid_distance_m = self.get_parameter(
-            'minimum_valid_distance_m'
+        self.deadman_button_index = self.get_parameter(
+            'deadman_button_index'
         ).value
         self.stop_distance_m = self.get_parameter('stop_distance_m').value
-        self.slow_distance_m = self.get_parameter('slow_distance_m').value
-        self.slow_speed_mps = self.get_parameter('slow_speed_mps').value
-        self.max_speed_mps = self.get_parameter('max_speed_mps').value
+        self.drive_speed_mps = self.get_parameter('drive_speed_mps').value
+        self.deadman_pressed = False
 
         self.drive_publisher = self.create_publisher(
             AckermannDriveStamped,
@@ -64,37 +57,35 @@ class SafetyNode(Node):
             self.scan_callback,
             qos_profile_sensor_data,
         )
-
-    def scan_callback(self, scan_message):
-        minimum_distance = closest_front_distance(
-            scan_message.ranges,
-            scan_message.angle_min,
-            scan_message.angle_increment,
-            self.front_half_angle_rad,
-            self.minimum_valid_distance_m,
-        )
-        speed = target_speed(
-            minimum_distance,
-            self.stop_distance_m,
-            self.slow_distance_m,
-            self.slow_speed_mps,
-            self.max_speed_mps,
+        self.joy_subscription = self.create_subscription(
+            Joy,
+            '/joy',
+            self.joy_callback,
+            10,
         )
 
-        if minimum_distance is None:
-            self.get_logger().warning(
-                'No valid front LiDAR reading; publishing a stop command.'
-            )
-        elif speed == 0.0:
-            self.get_logger().warning(
-                f'Obstacle at {minimum_distance:.2f} m; publishing a stop command.'
-            )
-        else:
-            self.get_logger().info(
-                f'Front obstacle: {minimum_distance:.2f} m, '
-                f'target speed: {speed:.2f} m/s'
-            )
+    def joy_callback(self, message):
+        was_pressed = self.deadman_pressed
+        button_exists = 0 <= self.deadman_button_index < len(message.buttons)
+        self.deadman_pressed = (
+            button_exists and bool(message.buttons[self.deadman_button_index])
+        )
 
+        if was_pressed and not self.deadman_pressed:
+            self.publish_drive(0.0)
+
+    def scan_callback(self, message):
+        center_index = len(message.ranges) // 2
+        center_distance = (
+            message.ranges[center_index] if message.ranges else float('nan')
+        )
+
+        can_drive = (
+            self.deadman_pressed
+            and math.isfinite(center_distance)
+            and center_distance >= self.stop_distance_m
+        )
+        speed = self.drive_speed_mps if can_drive else 0.0
         self.publish_drive(speed)
 
     def publish_drive(self, speed):
@@ -106,7 +97,7 @@ class SafetyNode(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = SafetyNode()
+    node = TTCDriverWithJoy()
     try:
         rclpy.spin(node)
     finally:
