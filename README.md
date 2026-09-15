@@ -1,221 +1,88 @@
-# f1tenth_system
+# F1TENTH ROS 2 · LiDAR 거리 기반 속도 제어
 
-Drivers onboard f1tenth race cars. This branch is under development for migration to ROS2. See the [documentation of F1TENTH](https://f1tenth.readthedocs.io/en/foxy_test/getting_started/firmware/index.html) on how to get started.
+LiDAR의 전방 거리를 읽고 정지·감속·주행 명령을 만드는 F1TENTH 프로젝트입니다. 2025년 프로젝트에서는 YDLiDAR G2, Jetson Nano, ROS 2 Foxy, VESC를 사용해 실내 장애물 조건을 비교했습니다. 현재 저장소에는 이후 정리한 계산 함수와 단위 테스트도 포함됩니다.
 
-## Deadman's switch
-On Logitech F-710 joysticks, the LB button is the deadman's switch for teleop, and the RB button is the deadman's switch for navigation. You can also remap buttons. See how on the readthedocs documentation.
+## 프로젝트에서 다룬 문제
 
-## Topics
+- **센서 수신:** 발행·구독 QoS 조건을 확인하고 센서 데이터 수신 설정을 맞췄습니다.
+- **전방 방향:** LiDAR 거리 데이터를 시각화하고 각도와 차량 전방의 관계를 확인했습니다.
+- **유효 거리:** 전방 범위 안에서 NaN·무한대·너무 작은 값을 제외하고 가장 가까운 거리를 선택합니다.
+- **거리별 판단:** 임계값에 따라 속도를 선택하고 경계조건을 테스트합니다.
 
-### Topics that the driver stack subscribe to
-- `/drive`: Topic for autonomous navigation, uses `AckermannDriveStamped` messages.
+프로젝트·논문 작업에 참여했으며 제1저자 기록이 있습니다. 2025 한국정보기술학회 대학생 논문경진대회 우수논문상 동상은 팀 논문 성과입니다.
 
-### Sensor topics published by the driver stack
-- `/scan`: Topic for `LaserScan` messages.
-- `/odom`: Topic for `Odometry` messages.
-- `/sensors/imu/raw`: Topic for `Imu` messages.
-- `/sensors/core`: Topic for telemetry data from the VESC
+## 현재 코드의 범위
 
-## External Dependencies
+[control.py](f1tenth_ws/src/f1tenth_system/safety_node/safety_node/control.py)는 각도를 `angle_min + index * angle_increment`로 계산하고, 전방 영역의 유효 거리 중 최소값을 반환합니다. 기본 전방 범위는 ±15도, 최소 유효 거리는 0.05m입니다.
 
-1. ackermann_msgs [https://index.ros.org/r/ackermann_msgs/#foxy](https://index.ros.org/r/ackermann_msgs/#foxy).
-2. urg_node [https://index.ros.org/p/urg_node/#foxy](https://index.ros.org/p/urg_node/#foxy). This is the driver for Hokuyo LiDARs.
-3. joy [https://index.ros.org/p/joy/#foxy](https://index.ros.org/p/joy/#foxy). This is the driver for joysticks in ROS 2.
-4. teleop_tools  [https://index.ros.org/p/teleop_tools/#foxy](https://index.ros.org/p/teleop_tools/#foxy). This is the package for teleop with joysticks in ROS 2.
-5. vesc [GitHub - f1tenth/vesc at ros2](https://github.com/f1tenth/vesc/tree/ros2). This is the driver for VESCs in ROS 2.
-6. ackermann_mux [GitHub - f1tenth/ackermann_mux: Twist multiplexer](https://github.com/f1tenth/ackermann_mux). This is a package for multiplexing ackermann messages in ROS 2.
-<!-- 7. rosbridge_suite [https://index.ros.org/p/rosbridge_suite/#foxy-overview](https://index.ros.org/p/rosbridge_suite/#foxy-overview) This is a package that allows for websocket connection in ROS 2. -->
+[safety_node.py](f1tenth_ws/src/f1tenth_system/safety_node/safety_node/safety_node.py)는 `/scan`을 센서 데이터 QoS로 구독하고 `/drive`에 `AckermannDriveStamped` 명령을 발행합니다.
 
-## Package in this repo
-
-1. f1tenth_stack: maintains the bringup launch and all parameter files
-
-## Nodes launched in bringup
-
-1. joy
-2. joy_teleop
-3. ackermann_to_vesc_node
-4. vesc_to_odom_node
-5. vesc_driver_node
-6. urg_node
-7. ackermann_mux
-
-## Parameters and topics for dependencies
-
-### vesc_driver
-
-1. Parameters:
-   - duty_cycle_min, duty_cycle_max
-   - current_min, current_max
-   - brake_min, brake_max
-   - speed_min, speed_max
-   - position_min, position_max
-   - servo_min, servo_max
-2. Publishes to:
-   - sensors/core
-   - sensors/servo_position_command
-   - sensors/imu
-   - sensors/imu/raw
-3. Subscribes to:
-   - commands/motor/duty_cycle
-   - commands/motor/current
-   - commands/motor/brake
-   - commands/motor/speed
-   - commands/motor/position
-   - commands/servo/position
-
-### ackermann_to_vesc
-
-1. Parameters:
-   - speed_to_erpm_gain
-   - speed_to_erpm_offset
-   - steering_angle_to_servo_gain
-   - steering_angle_to_servo_offset
-2. Publishes to:
-   - ackermann_cmd
-3. Subscribes to:
-   - commands/motor/speed
-   - commands/servo/position
-
-### vesc_to_odom
-
-1. Parameters:
-   - odom_frame
-   - base_frame
-   - use_servo_cmd_to_calc_angular_velocity
-   - speed_to_erpm_gain
-   - speed_to_erpm_offset
-   - steering_angle_to_servo_gain
-   - steering_angle_to_servo_offset
-   - wheelbase
-   - publish_tf
-2. Publishes to:
-   - odom
-3. Subscribes to:
-   - sensors/core
-   - sensors/servo_position_command
-
-### throttle_interpolator
-
-1. Parameters:
-   - rpm_input_topic
-   - rpm_output_topic
-   - servo_input_topic
-   - servo_output_topic
-   - max_acceleration
-   - speed_max
-   - speed_min
-   - throttle_smoother_rate
-   - speed_to_erpm_gain
-   - max_servo_speed
-   - steering_angle_to_servo_gain
-   - servo_smoother_rate
-   - servo_max
-   - servo_min
-   - steering_angle_to_servo_offset
-2. Publishes to:
-   - topic described in rpm_output_topic
-   - topic described in servo_output_topic
-3. Subscribes to:
-   - topic described in rpm_input_topic
-   - topic described in servo_input_topic
-  
-
-# F1TENTH ROS2 Safety Controller
-
-LiDAR 데이터를 이용해 전방 장애물을 감지하고 F1TENTH 차량의 속도를 제어하는 ROS 2 프로젝트입니다. 
-차량에 탑재된 ROS 2 Foxy 환경을 기준으로 안전 정지 노드와 조이스틱 데드맨 스위치 기반 주행 노드를 구성했습니다.
-
-## 주요 기능
-
-- `LaserScan`의 전방 ±15° 데이터를 필터링해 가장 가까운 장애물 거리 계산.
-- 장애물 거리에 따라 정지, 저속, 정상 주행의 3단계 속도 명령 생성.
-- 유효한 LiDAR 데이터가 없으면 차량을 정지시키는 fail-safe 동작 적용.
-- 조이스틱 RB 버튼을 데드맨 스위치로 사용해 버튼을 놓는 즉시 정지 명령 발행.
-- `AckermannDriveStamped` 메시지로 차량 구동 명령 전달.
-
-## 동작 구조
-
-```text
-YDLiDAR ── /scan ──> safety_node ── /drive ──> ackermann_mux ──> VESC
-Joystick ── /joy ──> ttc_driver_with_joy ────────┘
-```
-
-### 거리 기반 속도 정책
-
-| 전방 장애물 거리 | 목표 속도 |
+| 전방 거리 | 목표 속도 |
 | --- | ---: |
-| 0.5 m 미만 | 0.0 m/s |
-| 0.5 m 이상 1.5 m 미만 | 0.5 m/s |
-| 1.5 m 이상 | 최대 1.5 m/s |
-| 유효한 센서 데이터 없음 | 0.0 m/s |
+| 0.5m 미만 | 0m/s |
+| 0.5m 이상 1.5m 미만 | 0.5m/s |
+| 1.5m 이상 | 1.5m/s |
+| 수신한 스캔에 유효한 전방 거리 없음 | 0m/s |
 
-임계값과 속도는 ROS 2 파라미터로 조정할 수 있습니다.
+임계값과 속도는 ROS 2 파라미터로 설정합니다.
 
-## 기술 스택
+**안전 동작의 범위:** 수신한 메시지에 유효값이 없을 때 정지 명령을 만드는 로직입니다. 메시지 수신 자체가 끊겼음을 감지하는 타이머 watchdog은 현재 노드에 없습니다. 물리적인 제동 거리, 통신 단절, 실제 차량의 정지 여부는 별도 시스템 검증이 필요합니다.
 
-- ROS 2 Foxy
-- Python 3
-- NVIDIA Jetson Nano
-- YDLiDAR
-- VESC, Ackermann steering
-- `colcon`, `ament_cmake`
+## 검증 기록
 
-## 프로젝트 구조
+- 기존 실차 실험: 장애물 없음, 1.2m, 0.3m 조건 비교
+- 논문 기록: 100ms 이내 제어 명령 반영. 차량의 물리적 완전 정지 시간과 구분
+- 현재 단위 테스트: 전방 필터링, 유효값 없음, 빈 스캔, 정지 조건, 속도 경계, 잘못된 임계값의 6개 테스트
+- 이후 정리 이력: [PR #1](https://github.com/junghwa0609/ROS2/pull/1). 최근 코드 정리와 테스트를 과거 실차 실험 결과로 소급하지 않음
+
+## 구조와 시작 위치
 
 ```text
 f1tenth_ws/src/f1tenth_system/
-├── safety_node/       # LiDAR 기반 장애물 감지 및 안전 속도 제어
-├── f1tenth_stack/     # 차량 bring-up, 조이스틱 및 구동 설정
-├── ackermann_mux/     # 주행 명령 우선순위 처리
-└── teleop_tools/      # 키보드·마우스·조이스틱 원격 조작 도구
+├── safety_node/       # 거리 계산·속도 정책·노드·테스트
+├── f1tenth_stack/     # 차량 bring-up·조이스틱·구동 설정
+├── ackermann_mux/    # 명령 우선순위 처리
+└── teleop_tools/     # 원격 조작 도구
 ```
 
-## 빌드 및 실행
+먼저 `safety_node/control.py`와 `tests/test_control.py`를 함께 읽으면 입력값과 판단 조건을 확인할 수 있습니다. 전체 워크스페이스에는 외부 드라이버와 라이브러리가 포함되므로 모든 코드를 개인 작성 코드로 보지 않습니다.
 
-ROS 2 Foxy와 프로젝트 의존 패키지가 설치된 환경에서 실행.
+## 빌드·실행
+
+ROS 2 Foxy와 의존 패키지가 설치된 프로젝트 환경을 기준으로 합니다. 하드웨어별 드라이버·포트·토픽·mux 설정은 실제 장비에 맞춰 확인해야 합니다.
 
 ```bash
 cd f1tenth_ws
 colcon build --symlink-install
 source install/setup.bash
-```
-
-LiDAR 안전 제어 노드:
-
-```bash
 ros2 run safety_node safety_node.py
 ```
 
-조이스틱 데드맨 스위치 기반 주행 노드:
+조이스틱 기반 주행 노드는 다음 실행 경로를 사용합니다. 차량 구성에 맞는 토픽과 데드맨 스위치 설정을 먼저 확인합니다.
 
 ```bash
 ros2 run f1tenth_stack ttc_driver_with_joy
 ```
 
-## ROS 인터페이스
+## 계산 함수 테스트
 
-| 구분 | 토픽 | 메시지 |
-| --- | --- | --- |
-| Subscribe | `/scan` | `sensor_msgs/LaserScan` |
-| Subscribe | `/joy` | `sensor_msgs/Joy` |
-| Publish | `/drive` | `ackermann_msgs/AckermannDriveStamped` |
-
-## 테스트
-
-센서 데이터 필터링과 속도 결정 로직은 ROS 2 실행 환경 없이도 단위 테스트할 수 있습니다.
+ROS 2 실행 환경 없이 순수 계산 함수 테스트를 실행할 수 있습니다.
 
 ```bash
 cd f1tenth_ws/src/f1tenth_system/safety_node
 python3 -m unittest discover -s tests
 ```
 
-ROS 2 환경에서는 워크스페이스 루트에서 다음 명령으로 같은 테스트를 실행할 수 있습니다.
+ROS 2 워크스페이스에서는 다음 경로도 사용할 수 있습니다.
 
 ```bash
 colcon test --packages-select safety_node
 ```
 
-## 참고 및 출처
+이 README 정리 과정에서는 실제 차량·ROS 2 환경을 다시 실행하지 않았습니다.
 
-이 저장소는 오픈소스 [F1TENTH system](https://github.com/f1tenth/f1tenth_system)을 기반으로 구성했으며, 포함된 외부 패키지의 라이선스와 저작권 표시는 각 디렉터리에 유지했습니다.
+## 참고·라이선스
+
+이 저장소는 [F1TENTH system](https://github.com/f1tenth/f1tenth_system)을 기반으로 구성했습니다. 원본 드라이버 설치·조이스틱·VESC 설정은 [F1TENTH 문서](https://f1tenth.readthedocs.io/en/foxy_test/getting_started/firmware/index.html)를 참고합니다. 원본 문서의 Hokuyo/urg_node 등 장비 예시와 이 프로젝트의 YDLiDAR 구성을 구분해야 합니다.
+
+포함된 외부 패키지의 라이선스·저작권 표시는 각 디렉터리에 유지되어 있습니다.
